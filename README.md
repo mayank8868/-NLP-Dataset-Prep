@@ -2,6 +2,7 @@
 📖 Overview
 
 This project demonstrates Natural Language Processing (NLP) workflows using the IMDB Movie Reviews dataset.
+It covers dataset preprocessing, zero-shot classification, fine-tuning, evaluation, and troubleshooting common NLP issues.
 
 🔑 Key Features
 
@@ -15,22 +16,24 @@ This project demonstrates Natural Language Processing (NLP) workflows using the 
 
 📂 Repository Structure
 NLP-Dataset-Prep/
-├── 📜 NLP_Assignment_Report.pdf    # Report / Documentation
-├── 📜 NLP_&_Dataset_Prep.ipynb     # Main Jupyter Notebook
-├── 📜 requirements.txt             # Required dependencies
-└── 📜 README.md                    # Project documentation
+│── 📄 NLP_&_Dataset_Prep.ipynb      # Main Jupyter Notebook
+│── 📄 README.md                     # Project documentation
 
 ⚙️ Setup Instructions
+
 1️⃣ Clone the repository
-git clone https://github.com/mayank8868/-NLP-Dataset-Prep.git
+
+git clone https://github.com/mayank88686/-NLP-Dataset-Prep.git  
 cd NLP-Dataset-Prep
 
+
 2️⃣ Install dependencies
+
 pip install -r requirements.txt
 
-3️⃣ Run the notebook
 
-Open NLP_&_Dataset_Prep.ipynb in Jupyter Notebook or VS Code and execute cells step by step.
+3️⃣ Run the notebook
+Open NLP_&_Dataset_Prep.ipynb in Jupyter Notebook or VS Code and execute step by step.
 
 📊 Dataset Details
 
@@ -40,7 +43,7 @@ Classes: Positive / Negative sentiment
 
 Total Size: 50,000 reviews (25k train / 25k test)
 
-Split Used:
+Splits Used:
 
 90% Training
 
@@ -55,21 +58,18 @@ Uses natural language prompts for classification
 
 No training required
 
-Evaluated on a sample of 200 reviews
+Evaluated on 200 samples
 
 🔹 DistilBERT (Fine-Tuned)
 
 Lightweight BERT model fine-tuned on IMDB dataset
 
-Evaluated with accuracy, precision, recall, and F1-score
+Evaluated with accuracy, precision, recall, F1-score
 
 📈 Results
 Model	Accuracy	F1 Score
 FLAN-T5 (Zero-Shot, 200 samples)	~0.72	~0.70
 DistilBERT (Fine-Tuned)	~0.91	~0.91
-
-✅ Observation: Fine-tuned DistilBERT outperforms zero-shot FLAN-T5 on IMDB sentiment classification.
-
 🛠 Troubleshooting Notes
 
 ⚠️ CUDA Out of Memory → Reduce batch size

@@ -1,75 +1,86 @@
-📌 NLP Dataset Preparation & Model Fine-Tuning
-📖 Project Overview
+# 📌 NLP Dataset Preparation & Model Fine-Tuning  
 
-This project demonstrates Natural Language Processing (NLP) workflows using the IMDB movie reviews dataset.
-It covers:
+## 📖 Overview  
+This project demonstrates **Natural Language Processing (NLP)** workflows using the **IMDB Movie Reviews dataset**.  
 
-Dataset selection and preprocessing
+### Key Features  
+- 📂 Dataset selection & preprocessing  
+- ✨ Zero-shot classification with **FLAN-T5**  
+- 🔧 Fine-tuning & evaluation with **DistilBERT**  
+- 🛠 Troubleshooting Hugging Face issues  
 
-Prompt engineering with FLAN-T5 (zero-shot classification)
+---
 
-Fine-tuning and evaluation with DistilBERT
+## 📂 Repository Structure  
+NLP-Dataset-Prep/
+┣ 📜 NLP_Assignment_Report.pdf # Report/Documentation
+┣ 📜 NLP_&_Dataset_Prep.ipynb # Main Jupyter Notebook
+┣ 📜 requirements.txt # Required dependencies
+┗ 📜 README.md # Project documentation
 
-Troubleshooting common Hugging Face issues
+yaml
+Copy
+Edit
 
-📂 Repository Structure
-📦 NLP-Dataset-Prep
- ┣ 📜 NLP_Assignment_Report.pdf   # Report/Documentation
- ┣ 📜 NLP_&_Dataset_Prep.ipynb    # Main Jupyter Notebook
- ┣ 📜 requirements.txt            # Required dependencies
- ┗ 📜 README.md                   # Project documentation
+---
 
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions  
 
-Clone the repository
-
+### 1️⃣ Clone the repository  
+```bash
 git clone https://github.com/mayank8868/-NLP-Dataset-Prep.git
 cd NLP-Dataset-Prep
-
-
-Install dependencies
-
+2️⃣ Install dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
-
-
-Run the notebook
+3️⃣ Run the notebook
 Open NLP_&_Dataset_Prep.ipynb in Jupyter Notebook or VS Code and execute cells step by step.
 
-📊 Dataset
-
+📊 Dataset Details
 Source: IMDB Movie Reviews
- from Hugging Face Datasets
 
 Classes: Positive / Negative sentiment
 
-Size: 25,000 train / 25,000 test reviews
+Total Size: 50,000 reviews (25k train / 25k test)
 
-Split: 90% training, 10% validation
+Split Used:
 
-🚀 Models Used
+90% Training
 
-FLAN-T5 (Zero-Shot Prompting)
+10% Validation
 
-Direct classification using natural language prompts.
+25k Test
 
-DistilBERT (Fine-Tuned)
+🚀 Models Implemented
+🔹 FLAN-T5 (Zero-Shot Prompting)
+Uses natural language prompts for classification
 
-Lightweight BERT model fine-tuned on IMDB reviews.
+No training required
 
-Evaluated using accuracy, precision, recall, and F1-score.
+Evaluated on a sample of 200 reviews
+
+🔹 DistilBERT (Fine-Tuned)
+Lightweight BERT model fine-tuned on IMDB dataset
+
+Evaluated with accuracy, precision, recall, and F1-score
 
 📈 Results
 Model	Accuracy	F1 Score
 FLAN-T5 (Zero-Shot, 200 samples)	~0.72	~0.70
 DistilBERT (Fine-Tuned)	~0.91	~0.91
+
 🛠 Troubleshooting Notes
+⚠️ CUDA Out of Memory → Reduce batch size
 
-CUDA Out of Memory → Reduce batch size.
+⚠️ Tokenizer mismatch → Ensure model & tokenizer checkpoint match
 
-Tokenizer mismatch → Ensure tokenizer and model checkpoint match.
-
-Slow training → Use fp16=True for mixed precision.
+⚠️ Slow training → Enable fp16=True for mixed precision
 
 🙌 Author
-
 👤 Mayank Yadav
+
+🔗 GitHub
+
+🔗 LinkedIn

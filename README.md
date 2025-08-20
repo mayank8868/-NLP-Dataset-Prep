@@ -81,6 +81,3 @@ DistilBERT (Fine-Tuned)	~0.91	~0.91
 🙌 Author
 👤 Mayank Yadav
 
-🔗 GitHub
-
-🔗 LinkedIn

@@ -11,29 +11,25 @@ This project demonstrates Natural Language Processing (NLP) workflows using the 
 
 🔧 Fine-tuning & evaluation with DistilBERT
 
-🛠 Troubleshooting common Hugging Face issues
+🛠 Troubleshooting Hugging Face issues
 
 📂 Repository Structure
 NLP-Dataset-Prep/
-┣ 📜 NLP_Assignment_Report.pdf   # Report / Documentation  
-┣ 📜 NLP_&_Dataset_Prep.ipynb    # Main Jupyter Notebook  
-┣ 📜 requirements.txt            # Required dependencies  
-┗ 📜 README.md                   # Project documentation  
+├── 📜 NLP_Assignment_Report.pdf    # Report / Documentation
+├── 📜 NLP_&_Dataset_Prep.ipynb     # Main Jupyter Notebook
+├── 📜 requirements.txt             # Required dependencies
+└── 📜 README.md                    # Project documentation
 
 ⚙️ Setup Instructions
-
 1️⃣ Clone the repository
-
 git clone https://github.com/mayank8868/-NLP-Dataset-Prep.git
 cd NLP-Dataset-Prep
 
-
 2️⃣ Install dependencies
-
 pip install -r requirements.txt
 
-
 3️⃣ Run the notebook
+
 Open NLP_&_Dataset_Prep.ipynb in Jupyter Notebook or VS Code and execute cells step by step.
 
 📊 Dataset Details
